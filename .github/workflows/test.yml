@@ -12,6 +12,6 @@ jobs:
     - uses: avsm/setup-ocaml@master
       with:
         ocaml-version: '4.08.1'
-    - run: opam exec -- dune build
     - run: opam install -t . --deps-only
+    - run: opam exec -- dune build
     - run: opam exec -- dune runtest
