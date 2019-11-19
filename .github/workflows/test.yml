@@ -9,7 +9,7 @@ jobs:
         operating-system: [macos-latest, ubuntu-latest, windows-latest]
     steps:
     - uses: actions/checkout@master
-    - uses: avsm/setup-ocaml@v1
+    - uses: avsm/setup-ocaml@master
       with:
         ocaml-version: '4.08.1'
     - run: opam exec -- dune build
